@@ -46,16 +46,16 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20),
             Text(
               'Password: $password',
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.9,
               height: MediaQuery.of(context).size.height * 0.1,
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: ElevatedButton(
-                  child: const Text('LOGIN'),
+                  child: const Text('LOG OUT'),
                   onPressed: () async {
                     SharedPreferences sharedPreferences =
                     await SharedPreferences.getInstance();
